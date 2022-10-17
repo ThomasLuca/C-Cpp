@@ -1,13 +1,8 @@
 #include <stdio.h>
 
 int ggd(int a, int b) {
-  int res = 0;
-  if (!b) {
-    res = a;
-  } else {
-    res = ggd(b, (a % b));
-  }
-  return res;
+  if (!b) return a;
+  return ggd(b, (a % b));
 }
 
 int zijn_onderling_ondeelbaar(int a, int b) { return ggd(a, b) == 1; }
