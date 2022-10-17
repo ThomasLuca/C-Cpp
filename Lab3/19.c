@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-void schrijf_aantal(char arr[], int n) {
+void schrijf_aantal(char *arr, int n) {
   for (int i = 0; i < n; i++) {
-    printf("%c ", (*arr)+i);
+    printf("%c ", *arr++);
   }
 }
 
@@ -20,4 +20,4 @@ int main(){
     schrijf(p+10,p+12);
     printf("\n");
     return 0;
-} 
+}
