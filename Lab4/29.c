@@ -21,7 +21,6 @@ int main() {
   int leeftijden[] = {21, 30, 18, 14, 22, 19};
   double scores[] = {0.5, 1.6, 8.2, -2.4};
 
-  // TODO: fix grootte van c-string
   schrijf_array(namen, sizeof(namen) / sizeof(char *), sizeof(char *), '|',
                 schrijf_cstring);
 
