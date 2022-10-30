@@ -90,9 +90,14 @@ int main() {
     punten[i] = p;
   }
 
-  double max_d = bepaal_max_afstand(punten, len_points, manhattan_afstand);
+  double max_manhattan = bepaal_max_afstand(punten, len_points, manhattan_afstand);
+  double max_euclidisch = bepaal_max_afstand(punten, len_points, euclidische_afstand);
+  double max_cheby = bepaal_max_afstand(punten, len_points, chebyshev);
 
-  printf("Max distance = %lf\n", max_d);
+  printf("\n");
+  printf("Max manhattan  \t= %.3lf\n", max_manhattan);
+  printf("Max euclidische\t= %.3lf\n", max_euclidisch);
+  printf("Max chebyshev  \t= %.3lf\n", max_cheby);
 
   return 0;
 }
