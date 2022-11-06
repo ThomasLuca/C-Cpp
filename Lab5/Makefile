@@ -10,5 +10,8 @@ TARGET=a
 35:
 	$(CC) 35.c -o $(TARGET) && ./$(TARGET)
 
+36:
+	$(CC) 36.c -o $(TARGET) && ./$(TARGET)
+
 clean:
 	rm $(TARGET)
