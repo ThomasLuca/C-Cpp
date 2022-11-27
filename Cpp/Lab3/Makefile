@@ -6,7 +6,7 @@ FLAGS= -std=c++14 -static-libgcc
 	$(CC) ${FLAGS} 11.cpp -o $(TARGET) && ./$(TARGET)
 
 12:
-	$(CC) ${FLAGS} 12.cpp -o $(TARGET) && ./$(TARGET)
+	$(CC) ${FLAGS} 12.cpp containers.h -o $(TARGET) && ./$(TARGET)
 
 13:
 	$(CC) ${FLAGS} 13.cpp -o $(TARGET) && ./$(TARGET)
