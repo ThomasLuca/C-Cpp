@@ -11,6 +11,11 @@ FLAGS= -std=c++14 -static-libgcc
 13:
 	$(CC) ${FLAGS} 13.cpp -o $(TARGET) && ./$(TARGET)
 
+14:
+	$(CC) ${FLAGS} 14.cpp -o $(TARGET) && ./$(TARGET)
+
+15:
+	$(CC) ${FLAGS} 15.cpp -o $(TARGET) && ./$(TARGET)
 
 clean:
 	rm $(TARGET)

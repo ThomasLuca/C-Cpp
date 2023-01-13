@@ -18,7 +18,7 @@ int main() {
   }
 
   for (auto &v : av) {
-    cout << v << endl;
+    cout << v;
   }
 
   return 0;
